@@ -1,0 +1,26 @@
+.gallery-warp .img-big-warp img{
+    height: 450px;
+    width: auto;
+    display: inline-block;
+    cursor: zoom-in;
+}
+
+.gallery-warp .img-small-warp .item-gallery{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 7px 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gallery-warp .img-small-warp{
+    text-align: center;
+}
+.gallery-warp .img-small-warp img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
