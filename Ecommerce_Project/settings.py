@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap4',
     'App_Login',
-    'App_Shop'
+    'App_Shop',
+    'App_Order',
+    'django_cleanup'
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

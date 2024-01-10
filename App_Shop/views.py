@@ -10,6 +10,8 @@ from App_Shop.models import Product, Category
 class Home(ListView):
     model = Product
     template_name = 'App_Shop/home.html'
-class ProductDetail(DetailView,LoginRequiredMixin):
+
+
+class ProductDetail(DetailView, LoginRequiredMixin):
     model = Product
     template_name = 'App_Shop/product_detail.html'
