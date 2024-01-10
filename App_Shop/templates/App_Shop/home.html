@@ -1,0 +1,9 @@
+{% extends  'base.html' %}
+{% load crispy_forms_tags %}
+{% block title_block %} Create New Account {% endblock %}
+{% block body_block %}
+    {% for product in object_list %}
+    	{{ product.name }}
+    {% endfor %}
+
+{% endblock %}
