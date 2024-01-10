@@ -1,6 +1,6 @@
 {% extends  'base.html' %}
 {% load crispy_forms_tags %}
-{% block title_block %} Profile: {{ user.username }} {% endblock %}
+{% block title_block %} Profile: {{ request.user.profile.full_name }} {% endblock %}
 {% block body_block %}
     <form method="POST">
         {{ form|crispy }}
