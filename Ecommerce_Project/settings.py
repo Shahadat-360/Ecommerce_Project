@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'App_Login',
     'App_Shop',
     'App_Order',
+    'App_Payment',
     'django_cleanup'
 ]
 
@@ -67,7 +68,7 @@ ROOT_URLCONF = 'Ecommerce_Project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR,],
+        'DIRS': [TEMPLATES_DIR, ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,4 +137,4 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-LOGIN_URL='/accounts/login/'
+LOGIN_URL = '/accounts/login/'
