@@ -18,7 +18,7 @@
                         aria-expanded="false"><i class="fa fa-user-tie"></i>  {{ request.user.profile.username }}</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a href="{% url 'App_Login:profile' %}" class="dropdown-item">Profile</a>
-                            <a href="" class="dropdown-item">Orders</a>
+                            <a href="{% url 'App_Payment:orders' %}" class="dropdown-item">Orders</a>
                             <div class="dropdown-divider"></div>
                             <a href="{% url 'App_Login:logout' %}" class="dropdown-item">Logout</a>
                         </div>
