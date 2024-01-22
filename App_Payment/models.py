@@ -18,7 +18,7 @@ class BillingAddress(models.Model):
         field_names = [f.name for f in self._meta.get_fields()]
         for field_name in field_names:
             val = getattr(self, field_name)
-            if val is not None or val == '':
+            if val is None or val == '':
                 return False
         return True
 
